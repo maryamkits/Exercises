@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Forms </title>
+</head>
+<body>
+    <form action="/resgister" method="POST">
+        Firstname: <input type="text" name="fistname" value="Mariami" maxlength="10"> <br>
+        Lasttname: <input type="text" name="lastname" placeholder="lastname"> <br>
+        <hr>
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="username" id="username"> <br>
+        <label for="Password">Password:</label>
+        <input type="Password" name="Password" placeholder="Password"> <br>
+        <input type="submit" value="Login">
+        <input type="reset" value="reset fields"> <br>
+        
+        Comment:
+        <textarea name="comment" rows="5" cols="100" style="resize:none"></textarea>
+        <br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+        <fieldset>
+            <legend>Vehicles</legend>
+               <input type="checkbox" name="bike" value="bike"> I have a bike
+               <input type="checkbox" name="car" value="car"> I have a car
+        </fieldset>
+        <input type="checkbox" name="bike" value="bike"> I have a bike
+        <input type="checkbox" name="car" value="car"> I have a car
+        <br>
+        <label id="cars">Select Cars</label>
+        <select name="cars[]" id="cars" size="2">
+            <option value="bmw">Bmw</option>
+            <option value="vw">Vw</option>
+        </select>
+        <br>
+        <button type="submit">Login</button>
+        <button type="reset">reset fields</button>
+        <button type="button" onclick="alert('hello')">click me</button> <br>
+    </form>
+</body>
+</html>

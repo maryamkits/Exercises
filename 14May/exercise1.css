@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(109, 214, 204);
+}
+
+h1, h2 {
+    text-align:center;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 40px; 
+    color: brown; 
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

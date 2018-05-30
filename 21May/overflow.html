@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 101</title> 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    body > div:nth-of-type(1) {
+        width: 250px;
+        height: 100px;
+        background-color: teal;
+        overflow: hidden;
+    }
+    .outer {
+        border: 5px dotted rgb(61, 214, 0, 0.904);
+        border-radius: 5px;
+        width: 450px;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+    .float {
+        padding: 10px;
+        border: 5px solid rgba(112, 235, 64, 0.904);
+        border-radius: 5px;
+        background-color: rgb(50, 0, 214, 0.719);
+        color: white;
+        float: left;
+        width: 200px;
+        margin: 0 20px 0 0;
+    }
+    .overflow {
+        overflow: auto;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aspernatur laborum harum accusamus eum minus suscipit, quo ab debitis maxime enim, illum ducimus atque ea ipsam, sequi voluptatem dolorem eos.
+        Laudantium id libero ab fuga quaerat non vel ea voluptas sunt atque perspiciatis culpa optio molestias, aspernatur reiciendis magni dolore nulla incidunt maxime modi quae unde? Itaque eveniet consequuntur laudantium?
+        Molestiae vero perferendis nesciunt asperiores provident dignissimos, quasi dolores sapiente illum exercitationem beatae labore suscipit atque. Consequuntur modi dolore ratione provident reprehenderit culpa quibusdam totam, ut earum quod similique delectus!
+    </div>
+    <hr>
+
+    <h2>floated: Plenty of Text</h2>
+    <div class="outer">
+        <div class="float">
+            im a floated element
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestiae. Tempore, voluptatem nesciunt consequuntur doloremque alias ratione obcaecati sed assumenda natus, quam temporibus asperiores dolorum magnam, suscipit itaque mollitia quis?Tenetur, voluptatum officiis? Rerum, officiis nisi. Fugit perspiciatis repellat quisquam ab quo ad, voluptate, accusamus expedita eos ut recusandae nihil impedit voluptatibus ullam possimus cum assumenda optio! Harum, rerum soluta.
+    </div>
+
+    <h2>floated: not enough Text</h2>
+    <div class="outer">
+        <div class="float">
+            im a floated element
+        </div>
+        Lorem ipsum dolor sit amet
+        </div>
+
+        <h2>floated: overflow solution</h2>
+        <div class="outer overflow">
+            <div class="float">
+                im a floated element
+            </div>
+            Lorem ipsum dolor sit amet consec
+        </div>
+</body>
+</html>
