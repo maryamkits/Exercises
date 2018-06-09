@@ -1,0 +1,171 @@
+/* /* 
+ * Colors
+ * 
+ * Dark gray		#34383c
+ * medium gray		#81858a
+ * purple			#620e6e
+ * blue				#4385c1
+ * light blue		#9ac9f4
+ * darker blue		#043867
+ * darkest blue	#002342
+ * blue tint		#e7ecf0
+ * green				#7aa120
+ */
+
+
+
+body {
+	background: white;
+	color: #81858a;
+	font: 1em/1.6 Helvetica, Verdana, sans-serif;
+}
+
+header {
+	background: #4385c1;
+	color: white;
+	font-size: .9rem;
+}
+
+
+.branding {
+	float: left;
+	margin-left: 250px;
+	margin-top: 50px;
+	width: 500px;
+	text-align: center;
+}
+
+
+#utilities-nav {
+
+	margin-top: 50px;
+	display: inline-block;
+	float: right;
+	
+}
+
+#utilities-nav .button {
+	padding: 10px 30px 10px 30px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+
+footer {
+	background: #34383c;
+	color: white;
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif;
+	font-weight: normal;
+}
+h1 {}
+h2 {
+	font: 2.25rem/1.2 Helvetica, Verdana, sans-serif;
+}
+h3 {}
+h4 {
+	font-size: 1.2rem;
+}
+h5 {}
+h6 {}
+p {	font-size: .925rem;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+/* Links */
+a:link, a:visited {
+	color: #4385c1;
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	color: #043867;
+}
+
+
+
+/* Header */
+.branding {
+	color: #9ac9f4;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/* navigation */
+#quick-nav {
+	margin-top: 50px;
+	float: left;
+}
+#quick-nav ul {
+	padding-left: 0;
+}
+#quick-nav li{
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 7px;
+	border-right: 1px solid #e7ecf0;
+}
+
+#quick-nav li:last-of-type {
+	border: none;
+}
+
+#quick-nav a:link, #quick-nav a:visited {
+	color: white;	
+}
+#quick-nav a:hover, #quick-nav a:focus, #quick-nav a:active {
+	color: #9ac9f4;
+}
+
+
+
+#main-nav ul {
+	margin: 0;
+}
+#main-nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 20px 80px 20px 80px;
+	border-left: 1px solid rgb(147, 181, 192);
+	text-align: center;
+}
+#main-nav {
+	clear: both;
+	background-color: #043867;
+	font-family: Georgia, serif;
+	font-size: 1.2em;
+	border: 1px solid #043867;
+	color: white;
+}
+#main-nav ul li a {
+	color: #fff;
+}
+#main-nav li:hover {
+	background-color: #002342;
+}
+
+
+
+
+
+
+#full-nav a:link, #full-nav a:visited {
+	color: #81858a;	
+}
+#full-nav h3 a:link, #full-nav h3 a:visited {
+	color: white;
+}
+#full-nav a:hover, #full-nav a:focus, #full-nav a:active {
+	color: white;
+}
