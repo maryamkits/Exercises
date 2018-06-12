@@ -18,51 +18,9 @@ body {
 	background: white;
 	color: #81858a;
 	font: 1em/1.6 Helvetica, Verdana, sans-serif;
-<<<<<<< HEAD
-}
-
-header {
-	background: #4385c1;
-	color: white;
-	font-size: .9rem;
-}
-
-
-.branding {
-	float: left;
-	margin-left: 250px;
-	margin-top: 50px;
-	width: 500px;
-	text-align: center;
-}
-
-
-#utilities-nav {
-
-	margin-top: 50px;
-	display: inline-block;
-	float: right;
-	
-}
-
-#utilities-nav .button {
-	padding: 10px 30px 10px 30px;
-	color: white;
-	border: 1px solid white;
-	border-radius: 5px;
-}
-
-
-footer {
-	background: #34383c;
-	color: white;
-	padding: 1em;
-}
-=======
 	line-height: 1.5em;
 }
 
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, serif;
@@ -72,22 +30,13 @@ h1 {}
 h2 {
 	font: 2.25rem/1.2 Helvetica, Verdana, sans-serif;
 }
-<<<<<<< HEAD
-h3 {}
-=======
 h3 {font-size: 1.5rem;}
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 h4 {
 	font-size: 1.2rem;
 }
 h5 {}
 h6 {}
-<<<<<<< HEAD
-p {	font-size: .925rem;
-}
-=======
 p {	font-size: .925rem;}
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 
 
 img {
@@ -110,13 +59,6 @@ a:hover, a:focus, a:active {
 .branding {
 	color: #9ac9f4;
 	text-transform: uppercase;
-<<<<<<< HEAD
-}
-
-
-
-
-=======
 	float: left;
 	margin-left: 110px;
 	margin-top: 30px;
@@ -294,15 +236,11 @@ small {
 	/* margin: 100px; */
 	padding: 50px 0 200px 400px;
 }
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 
 /* navigation */
 #quick-nav {
 	margin-top: 50px;
-<<<<<<< HEAD
-=======
 	margin-left: 15px;
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 	float: left;
 }
 #quick-nav ul {
@@ -332,17 +270,11 @@ small {
 	margin: 0;
 }
 #main-nav ul li{
-<<<<<<< HEAD
-	display: inline-block;
-	list-style-type: none;
-	padding: 20px 80px 20px 80px;
-=======
 	display: table-cell;
 	width: 1%;
 	/* display: inline-block; */
 	list-style-type: none;
 	padding: 20px;
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 	border-left: 1px solid rgb(147, 181, 192);
 	text-align: center;
 }
@@ -363,9 +295,6 @@ small {
 
 
 
-<<<<<<< HEAD
-
-=======
 #utilities-nav {
 	margin-top: 50px;
 	display: inline-block;
@@ -400,7 +329,6 @@ small {
 	list-style-type: none;
 	padding: 0;
 }
->>>>>>> c11e4be986e2ab9381d2dd2ddfe6c0142881d86d
 
 
 #full-nav a:link, #full-nav a:visited {
