@@ -1,0 +1,39 @@
+.nav-sticky {
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-main {
+    float: left;
+}
+
+img {
+    margin-left: 120px;
+    height: 360px;
+    width: 300px;
+}
+
+.main {
+    float: left;
+    margin-left: 120px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+article {
+    line-height: 1.5em;
+    margin-left: 120px;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 10%;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    height: 100px;
+}
