@@ -56,30 +56,36 @@ a:hover, a:focus, a:active {
 
 
 /* Header */
-.branding {
-	color: #9ac9f4;
-	text-transform: uppercase;
-	float: left;
-	margin-left: 110px;
-	margin-top: 30px;
-	width: 500px;
-	text-align: center;
-}
-
 header {
+	display: flex;
+	flex-wrap: wrap;
 	background: #4385c1;
 	color: white;
 	font-size: .9rem;
+	width: 100%;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.branding {
+	color: #9ac9f4;
+	text-transform: uppercase;
+	/* float: left; */
+	/* margin-left: 110px; */
+	/* margin-top: 30px; */
+	/* width: 500px; */
+	text-align: center;
 }
 
 /* main */
 .main {
 	display: grid;
 	grid-gap: 30px;
-	max-width: 960px;
+	width: 95%;
 	padding: 30px;
+	padding-top: 50px;
 	grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(8, auto);
+	grid-template-rows: repeat(8, auto);
 }
 .hero {
 	display: flex;
@@ -89,9 +95,7 @@ header {
 	grid-row: 1/3;
 }
 .hero img {
-	/* position: relative; */
-	/* z-index: -1; */
-	min-width: 1200px;
+	width: 100%;
 }
 .hero-title{
 	position: absolute;
@@ -239,9 +243,8 @@ small {
 
 /* navigation */
 #quick-nav {
-	margin-top: 50px;
-	margin-left: 15px;
-	float: left;
+	align-self: center;
+	margin-left: 10px;
 }
 #quick-nav ul {
 	padding-left: 0;
@@ -285,6 +288,8 @@ small {
 	font-size: 1.2em;
 	border: 1px solid #043867;
 	color: white;
+	/* align-self: flex-end;
+	width: 100%; */
 }
 #main-nav ul li a {
 	color: #fff;
@@ -296,9 +301,8 @@ small {
 
 
 #utilities-nav {
-	margin-top: 50px;
 	display: inline-block;
-	/* float: right; */
+	align-self: center;
 	
 }
 #utilities-nav .button {
