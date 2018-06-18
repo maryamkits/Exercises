@@ -288,8 +288,8 @@ small {
 	font-size: 1.2em;
 	border: 1px solid #043867;
 	color: white;
-	/* align-self: flex-end;
-	width: 100%; */
+	/* align-self: flex-end; */
+	width: 100%; 
 }
 #main-nav ul li a {
 	color: #fff;
