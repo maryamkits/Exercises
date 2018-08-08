@@ -5,4 +5,4 @@ function delay(ms) {
             }, ms);
     })    
 }
-delay(3000).then((ms)=>alert(`runs after ${ms/1000} seconds`));
+delay(3000).then((ms)=>alert(`Runs after ${ms/1000} seconds`));
