@@ -1,0 +1,22 @@
+.numbers {
+    width: 1000px;
+    margin: 0 auto;
+}
+.num {
+    display: inline-block;
+    border: 2px solid skyblue;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 1px;
+}
+#random {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 60%;
+    background-color: rgb(221, 86, 109);
+    font-size: 20px;
+}
