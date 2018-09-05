@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <button id="doLazy">Do Lazy</button>
+    <button id="colorize">Colorize</button>
+
+    <!-- <script src="worker.js"></script> -->
+    <script>
+        let worker = new Worker('worker.js');
+        let nextProcessId = 1;
+        callbacks = {};
+
+        worker.addEventListener('message', function(e){
+            console.log(e.data)
+        })
+        function add(a, b){
+            if( !parseFloat(a) || !parseFloat(b)){
+                throw 'numberic inpust allowed'
+            }
+            return a + b;
+        }
+
+        function sub(a, b){
+            return a - b;
+        }
+    worker.addEventListener('message', function(e){
+        // console.log(e.data)
+        if(callbacks[e.data.processId]){
+            callbacks[e.data.processId](e.data.result);
+            delete callbacks[e.data.processId]
+        }
+    })
+    let regExp = /\((.*)\).*\{([\s\S)]*)\}/m;
+    let addParts = regExp.exec(add.toString());
+    console.log(addParts)
+
+    worker.postMessage({
+        type: 'registerFunction',
+        name: 'add',
+        parameters: addParts[1],
+        body: addParts[2],
+    });
+    
+    let msg = {
+        type: 'add',
+        nums: [1,2],
+        processId: nextProcessId++,
+    }
+    callbacks[msg.processId] = (function(msg){
+        return function(result){
+            if(result.isError){
+                console.log('something went wrong')
+            } else {
+                console.log('The result of adding', msg.nums, 'is', result.value)
+            }
+        }
+    })(msg)
+    worker.postMessage(msg)
+
+        // worker.postMessage({
+        //     type: 'add',
+        //     nums: [3,5]
+        // })
+        // worker.postMessage({
+        //     type: 'sub',
+        //     nums: [8,2]
+        // })
+
+    let sum = new Function('a', 'b', 'return a + b')
+
+        doLazy.addEventListener('click', function(e){
+            // worker.postMessage({
+            //     type: 'doLazy',
+            //     nums: [3,5]
+            // })
+            document.write(sum(10,13))
+        })
+
+        colorize.addEventListener('click', () => {
+            document.body.style.backgroundColor = 'pink'
+        })
+    </script>
+</body>
+</html>
