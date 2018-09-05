@@ -1,0 +1,74 @@
+﻿body {
+    /*background-color: #ff0000f0;*/;
+    /*background-color: rgba(255,0,0,.9);*/
+    /*background-image: url(images/bricks.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right 100px; (right top)*/
+    /*background-attachment: scroll;*/
+    /*background: rgba(255,0,0,.9) url(images/bricks.png) no-repeat scroll right top;
+    background-size: cover;*/;
+    /*margin-left: 100px;*/
+}
+
+/** {*/;
+    /*box-sizing: border-box;*/
+}
+
+.box {
+   /* display: block;*/ /*display:none*/
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    padding: 10px 20px 30px 40px;
+    margin-left: 100px;
+    /*border: 5px solid grey;
+    outline: 50px solid green
+    box-sizing: border-box; /*border-box*/
+
+}
+
+
+p.box--border_style {
+    border: 2px #333;
+    border-style: solid; /* solid  dotted dashed double groove inset outset outset*/
+    border-width: 5px 10px 7px 13px;
+    border-color: red green yellow blue;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    padding: 13px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+#border-box,
+#content-box, 
+#padding-box {
+    background-color: yellowgreen;
+    width: 225px;
+    padding: 1em 0;
+    border: 5px solid red;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+#border-box {
+    background-clip: border-box;
+}
+
+#padding-box {
+    background-clip: padding-box;
+}
+
+#content-box {
+    background-clip: content-box;
+}

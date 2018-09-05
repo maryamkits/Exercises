@@ -1,0 +1,22 @@
+﻿.chess {
+    width: 640px;
+    height: 640px;
+}
+
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    font-size: 50px;
+    text-align: center;
+}
+
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+}

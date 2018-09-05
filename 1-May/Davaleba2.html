@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Davaleba2</title>
+        <style>
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+       
+    }
+    </style>
+    </head>
+    <body>
+        <form action="https://www.google.com" method="get">
+            <table width="500px">
+                <tr>
+                    <th>Control Type</th>
+                    <th>Data</th>
+                    <th>Control</th>
+                </tr>
+                <tr>
+                    <td>Text Box</td>
+                    <td>Name:</td>
+                    <td>
+                     <input type="text" name="entername" placeholder="Enter name" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>Password:</td>
+                    <td> <input type="text" name="firstname" placeholder="" maxlength="10"> </td>
+                </tr>
+                <tr>
+                    <td>Text area</td>
+                    <td>Address:</td>
+                    <td><textarea name="comment" rows="5" cols="18" placeholder="Enter address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Drop down list</td>
+                    <td>Area:</td>
+                    <td>
+                        <select>
+                            <option value="Center">Center</option>
+                            <option value="NotCenter">Not Center</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Check Box</td>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="sport" value="Sport">Sport <br />
+                        <input type="checkbox" name="reading" value="Reading">Reading <br />
+                        <input type="checkbox" name="tv" value="tv">T.V. <br />
+                        <input type="checkbox" name="Internet" value="Internet">Internet
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Radio Buttons</td>
+                    <td>Gender:</td>
+                    <td>
+                        <fieldset style="width:250px">
+                            <legend>Gender Selection</legend>
+                            <input type="radio" name="gender" value="Male">Male <br />
+                            <input type="radio" name="gender" value="Female">Female
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>File upload</td>
+                    <td>Your image:</td>
+                    <td>
+                        <input type="file" name="fileUpLoad" id="fileUpLoad" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Buttons</td>
+                    <td>Actions:</td>
+                    <td>
+                        <button type="submit" value="submit">Submit</button>
+                        <button type="reset" value="reset">Reset</button>
+                        <button type="button" value="button">Button</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿.round {
+    display: inline-block;
+}
+.round1 {
+    height: 100px;
+    width: 100px;
+    background: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.round2 {
+    height: 100px;
+    width: 100px;
+    background: #00FFFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.round3 {
+    height: 100px;
+    width: 100px;
+    background: #FF00FF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 25px
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: grey;
+}
+
+.round1:hover ~ .box {
+    background: pink;
+    }
+
+.round2:hover ~ .box {
+    background: #00FFFF;
+}
+
+.round3:hover ~ .box {
+    background: #FF00FF;
+}
+ 
