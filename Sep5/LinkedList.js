@@ -62,7 +62,7 @@ function LinkedList(){
         }
     
     // Add new Value by Index
-    this.insertOf = (index, value) => {
+    this.insertAt = (index, value) => {
         let current = head;
         let newValue = new Node(value)
         let prev = null;
@@ -75,10 +75,29 @@ function LinkedList(){
             if(this.indexOf(current.value) === index){
                 newValue.next = current;
                 prev.next = newValue
+                length++;
             }
             prev = current;
             current = current.next
         }
+    }
+    // remove value by index
+    this.removeAt = (index) => {
+        let current = head;
+        let prev;
+        if(index == 0){
+            head = current.next
+            return
+        }
+        while(current){
+            if(this.indexOf(current.value) === index){
+                prev.next = current.next;
+            }
+            prev = current;
+            current = current.next
+        }
+        
+        length--;
     }
 }
 
@@ -93,5 +112,7 @@ list.add(20)
 // console.log(list.head())
 // console.log(list.indexOf(1))
 // console.log(list.valueAt(0))
-list.insertOf(1,14)
+list.insertAt(1,14)
 console.log(list.valueAt(1), list.valueAt(2))
+list.removeAt(0)
+console.log(list.valueAt(0))
