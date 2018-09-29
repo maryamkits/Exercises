@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snake Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+                display: flex;
+                background-color: rgb(255, 192, 203);
+            }
+            ul{
+                list-style-type: none;
+                margin: 20px;
+                font-size: 20px;
+            }
+            ul li{
+                padding-top: 10px;
+                font-size: 15px;
+            }
+            #totalScore {
+                padding: 60px;
+            }
+            textarea {
+                resize: none;
+                margin-left: 3px;
+                border: 1px solid black;
+                background-color: rgb(255, 192, 203);
+                text-align: center;
+            }
+        </style>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <ul id="settings">
+            Settings Menu
+            <li id="boardSize"><span>Board Size - </span>
+                Width:<textarea id="boardWidth" cols="5" rows="1"></textarea>
+                Height:<textarea id="boardHeight" cols="5" rows="1"></textarea>
+            </li>
+            <li>Number of Apples
+                <textarea id="appleN" cols="3" rows="1"></textarea>
+            </li>
+            <li>Length of Snake
+                <textarea id="snakeLength" cols="3" rows="1"></textarea>
+            </li>
+            <li>Game Level
+                <select id="levels" onmouseout="getValue()">
+                    <option value="novice">Novice</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <input type="range" id="levelRange" oninput="sliderChange(this.value)" value="max.value">
+                <output id="sliderVal"></output>
+            </li>
+            <li><button id="saveVal">Start</button>
+            </li>
+        </ul>
+        <p id="totalScore">Total Score: </p>
+
+    <script src="snakeClasses.js"></script>
+</body>
+</html>

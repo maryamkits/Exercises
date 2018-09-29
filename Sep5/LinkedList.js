@@ -1,12 +1,14 @@
 function LinkedList(){
     let head = null;
     let length = 0;
+
     let Node = function(value){
         this.value = value;
         this.next = null;
     }
     this.length = () => length;
     this.head = () => head;
+
     // Add new Node
     this.add = (value) => {
         let node = new Node(value)
@@ -21,13 +23,14 @@ function LinkedList(){
         }
         length++;
     }
+
     // Remove Node
     this.remove = (value) => {
         let current = head;
         let prevNode;
         if (current.value === value) {
             head = current.next;
-        } else {
+        } else { 
             while (current.value !== value){
                 prevNode = current;
                 current = current.next;
@@ -51,6 +54,7 @@ function LinkedList(){
         }
         return -1;
     }
+
     // Return value by the index
     this.valueAt = (index) => {
         let current = head;
@@ -81,6 +85,7 @@ function LinkedList(){
             current = current.next
         }
     }
+
     // remove value by index
     this.removeAt = (index) => {
         let current = head;
@@ -98,6 +103,7 @@ function LinkedList(){
         }
         
         length--;
+        return current.value
     }
 }
 
