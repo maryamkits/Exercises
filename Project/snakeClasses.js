@@ -178,13 +178,13 @@ let levelRange = document.querySelector('#levelRange')
 let saveVal = document.querySelector('#saveVal')
 
 /// start a Game
-localStorage.setItem('board Width', document.querySelector('#boardWidth').value)
-localStorage.setItem('board Height', document.querySelector('#boardHeight').value)
-localStorage.setItem('snake Length', document.querySelector('#snakeLength').value)
-localStorage.setItem('apple Num', document.querySelector('#appleN').value)
 // localStorage.setItem('game Level', document.querySelector('#levels').value)
 
 saveVal.addEventListener('click', function () {
+    localStorage.setItem('board Width', document.querySelector('#boardWidth').value)
+    localStorage.setItem('board Height', document.querySelector('#boardHeight').value)
+    localStorage.setItem('snake Length', document.querySelector('#snakeLength').value)
+    localStorage.setItem('apple Num', document.querySelector('#appleN').value)
 
     boardWidth = localStorage.getItem('board Width')
     boardHeight = localStorage.getItem('board Height')
