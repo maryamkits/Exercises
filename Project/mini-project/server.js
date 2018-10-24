@@ -38,6 +38,7 @@ app.get('/cars', (req, res) => {
     res.render('index', {
                 title: 'Cars',
                 carPage: true,
+                people,
                 cars
             })
 })
@@ -48,7 +49,6 @@ app.post('/cars', (req, res) => {
     res.render('index', {
                 title: 'Cars',
                 carPage: true,
-                // peoplePage: true,
                 people,
                 cars,
     })
