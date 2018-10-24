@@ -43,13 +43,13 @@ app.get('/cars', (req, res) => {
 })
 app.post('/cars', (req, res) => {
     const {car_name, model, vin, num, color} = req.body
-    cars.push({car_name, model, vin, num, color})
+    cars.push({owner, car_name, model, vin, num, color})
     let people = people
     res.render('index', {
                 title: 'Cars',
                 carPage: true,
                 // peoplePage: true,
-                people: people,
+                people,
                 cars,
     })
 })
