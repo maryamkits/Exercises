@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input {
+    width: 180px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+input:hover, input:focus {
+    background-color: rgba(128, 128, 128, 0.137);
+}
+button {
+    margin: 15px 20px;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+ul li {
+    list-style-type: decimal;
+    padding: 5px;
+    margin: 15px;
+}
+ul {
+    display: inline-block;
+    background-color: rgba(243, 110, 66, 0.137);
+    padding-left: 20px;
+    margin: 20px;
+}
+a {
+    color: rgb(7, 6, 6);
+    text-decoration: none;
+    margin: 50px;
+}
+a:hover {
+    font-size: 1.5em
+}
+a:visited {
+    color: gray;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(19, 117, 96, 0.514);
+    margin-bottom: 10px;
+}
+#search {
+    padding-top: 20px;
+}
+#peopleSearch, #carSearch{
+    width: 40%;
+    /* margin: 20px; */
+}
+form {
+    text-align: center;
+}
