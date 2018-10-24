@@ -41,9 +41,9 @@ html
  
         form(action="", method="post")
             select(name="owner")
-                //- option= 'Owner'
-                //- each person in people
-                //-     option= person.person_name
+                option= 'Owner'
+                each person in people
+                    option= person.person_name
             input(type="text", name="car_name", placeholder="Name", required)
             input(type="text", name="model", placeholder="Model", required)
             input(type="text", name="vin", placeholder="VIN", required)
