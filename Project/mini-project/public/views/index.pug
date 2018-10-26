@@ -25,9 +25,15 @@ html
 
             button Add Person
 
+
+        //- form(action=`/editPeople/${id}`, method="get")
         ul
             each person in people
-                li= person.person_name + ' ' + person.lastname
+                li= person.person_name +' '+ person.lastname +' '+ person.fathersname +' '+ person.id +' '+ person.birthday
+                    //- button.edit Edit
+                    a(href=`/editPeople/${person.id}`).edit Edit
+
+
 
     if carPage
         a(href="http://localhost:7000/") Go Back
@@ -40,19 +46,45 @@ html
         hr
  
         form(action="", method="post")
-            select(name="owner")
-                option= 'Owner'
+            select(name="owner" required id="owner")
                 each person in people
-                    option= person.person_name
+                    option= person.person_name + ' ' + person.lastname
             input(type="text", name="car_name", placeholder="Name", required)
             input(type="text", name="model", placeholder="Model", required)
             input(type="text", name="vin", placeholder="VIN", required)
-            input(type="text", name="num", placeholder="Number", required)
+            input(type="number", name="num", placeholder="Number", required)
             input(type="text", name="color", placeholder="Color")
 
             button Add a car
         
+        
         ul
             each car in cars
-                li= car.car_name + ' ' + car.model
-        
+                li= car.car_name + ' ' + car.model + ', Owner: ' + car.owner
+                    a(href=`/editCar/${car.vin}`).edit Edit
+
+
+
+    if editPeople
+        form(action="/", method="post")
+            input(type="text", name="person_name", value=`${person.person_name}`, required)
+            input(type="text", name="lastname", value=`${person.lastname}`, required)
+            input(type="text", name="fathersname",  value=`${person.fathersname}`)
+            input(type="number", name="id",  value=`${person.id}`, required)
+            input(type="date", name="birthday", data-date-format="DD MMMM YYYY",  value=`${person.birthday}`)
+
+            button Update Person
+
+    if editCar
+        form(action="/cars", method="post")
+            select(name="owner" required id="owner")
+                    option(value=`${car.owner}`)= car.owner
+                    each person in people
+                        option= person.person_name + ' ' + person.lastname
+            input(type="text", name="car_name", value=`${car.car_name}`, required)
+            input(type="text", name="model", value=`${car.model}`, required)
+            input(type="text", name="vin", value=`${car.vin}`, required)
+            input(type="number", name="num", value=`${car.num}`, required)
+            input(type="text", name="color", value=`${car.color}`)
+
+            button Update Car

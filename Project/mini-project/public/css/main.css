@@ -18,10 +18,15 @@ button {
     font-weight: 500;
     font-size: 1.1em;
 }
+.edit {
+    margin: 0 -5px 0 20px;
+    padding: 0;
+    font-size: 12px;
+}
 ul li {
     list-style-type: decimal;
     padding: 5px;
-    margin: 15px;
+    margin: 5px;
 }
 ul {
     display: inline-block;
@@ -51,8 +56,11 @@ h1 {
 }
 #peopleSearch, #carSearch{
     width: 40%;
-    /* margin: 20px; */
 }
 form {
     text-align: center;
+}
+select option {
+    padding: 10px 20px;
+    margin: 5px;
 }
