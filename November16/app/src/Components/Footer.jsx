@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer__bottom">
-                <div className="footer__bottom__right">
+                <div className="footer__bottom__left">
                     <i class="far fa-copyright"></i> 
                     1996-2018 Dopos. All rights reserved.
                 </div>
@@ -30,10 +30,10 @@ const Footer = () => {
                     <div>
                         Press Inquiries: press@dopos.stuido
                     </div>
+                </div>
                 <div className="footer__bottom__right">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms Of Use</a>
-                </div>
                 </div>
             </div>
         </div> 

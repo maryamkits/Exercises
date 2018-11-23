@@ -472,7 +472,7 @@ p {
 
 .footer__bottom {
   display: flex;
-  height: 150px;
+  justify-content: space-between;
   color: white;
   font-size: 0.8em;
   background-color: var(--lightGreen);
@@ -482,6 +482,25 @@ p {
   font-size: 0.9em;
 }
 
-.footer__bottom__right {
+.footer__bottom__left {
   width: 130px;
+  margin-right: 200px;
+}
+.footer__bottom__middle {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+.footer__bottom__middle div {
+  width: 120px;
+}
+.footer__bottom__right {
+  display: flex;
+  justify-content: end;
+  width: 200px;
+}
+.footer__bottom__right a {
+  color: white;
+  font-size: 0.9em;
+  margin-left: 20px;
 }
