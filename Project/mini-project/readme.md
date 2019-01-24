@@ -9,5 +9,7 @@ Car can have only one owner, but person may have lots of cars.
 \$ npm install pug
 
 cd mini-project
+
 \$ npm start
+
 (https://localhost:7000)
