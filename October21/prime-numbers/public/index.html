@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime Numbers</title>
+</head>
+<body>
+    <div>
+        <label>
+            Min: <input type="number" id="min_num">
+        </label>
+    </div>
+    <div>
+        <label>
+            Max: <input type="number" id="max_num">
+        </label>
+    </div>
+    <div>
+        <button type ="button" id="countPrimes">Count Primes</button>
+    </div>
+    <span id="result"></span>
+    <script>
+        const countPrimes = document.getElementById('countPrimes')
+
+        countPrimes.addEventListener('click', ({target}) => {
+            let min_num = document.getElementById('min_num').value
+            let max_num = document.getElementById('max_num').value
+            let result = document.getElementById('result')
+
+            let url = `/primes?min_num=${min_num}&max_num=${max_num}`
+
+            fetch(url, {
+                method: 'GET'
+            }).then(res => {
+                return res.text()
+            }).then(data => {
+                console.log(data)
+                result.innerHTML = `The number or primes is: ${data}`
+            }).catch(err => {
+                console.error(err)
+            })
+        })
+    </script>    
+</body>
+</html>

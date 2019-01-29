@@ -1,0 +1,61 @@
+body {
+	font-size: 1.7em;
+	background-color: lightblue;
+	padding: 80px;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1 {
+	font-size: 1.2em;
+}
+h2 {}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid black;
+	text-align: center;
+	width: 350px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	display: inline-block;
+}
+
+@media all and (min-width: 300px) {
+	body {
+		background-color: tomato;
+		font-size: 15px;
+		/* margin: 5px; */
+		max-width: 400px;
+		padding: 0;
+	}
+
+	figure {
+		width: 130px;
+		display: inline-block;
+		margin: 5px;
+		font-size: 10px;
+	}
+}
+
+@media all and (min-width: 700px) {
+	body {
+		background-color: teal;
+		font-size: 20px;
+	}
+}
+
+
+@media all and (min-width: 1000px) {
+	
+}
+
+

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.head {
+    float: left;
+    height: 200px;
+    border: 3px solid black;
+    border-bottom: 0;
+}
+
+.left {
+    width: 20%;
+}
+
+.center {
+    width: 60%;
+    border-left: 0;
+    border-right: 0;
+}
+
+.right {
+    width: 20%;
+}
+
+.column .center {
+    border-left: 0;
+    border-right: 0;
+}
+
+.col {
+    float: left;
+    height: 300px;
+    border: 3px solid black;
+    border-bottom: 0;
+}
+
+.footer {
+    clear: both;
+    border: 3px solid black;
+    padding: 100px;
+}

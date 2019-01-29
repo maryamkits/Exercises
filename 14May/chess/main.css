@@ -1,0 +1,35 @@
+.container {
+    width: 640px;
+    height: 640px;
+    margin: 10px auto;
+    background-color: grey;
+    border: 2px solid #bbb;
+}
+.row {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+}
+
+.chess-box {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+
+}
+.row:nth-child(2n+1) .chess-box:nth-child(2n+1){
+    background-color: #444;
+}
+.row:nth-child(2n+1) .chess-box:nth-child(2n+2){
+    background-color: #fff;
+}
+.row:nth-child(2n+2) .chess-box:nth-child(2n+2){
+    background-color: #444;
+}
+.row:nth-child(2n+2) .chess-box:nth-child(2n+1){
+    background-color: #fff;
+}
